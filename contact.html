@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>contact</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media.css">
+   </head>
+   <body>
+      <!--Navbar-->
+      <nav id="navbar">
+         <a href="index.html" id="abc">
+            <div id="logo">PORTFOLIO</div>
+         </a>
+         <div id="nav_items">
+            <a href="#" id="contact">Contact</a>
+            <a href="services.html" id="Services">Services</a>
+         </div>
+      </nav>
+      <div id="form" >
+         <h1 id="formHeading">Contact Us</h1>
+         <form id="myForm" method="POST" action="/submit-form">
+            <div>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name">
+               <p id="nameError" class="error">Please enter a valid name.</p>
+            </div>
+            <div>
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email">
+               <p id="emailError" class="error">Please enter a valid email address.</p>
+            </div>
+            <div>
+               <label for="phone">Phone number:</label>
+               <input type="tel" id="phone" name="phone">
+               <p id="phoneError" class="error">Please enter a valid phone number.</p>
+            </div>
+            <div>
+               <label for="comment">Comment:</label>
+               <textarea id="comment" name="comment"></textarea>
+               <p id="commentError" class="error">Please enter a comment.</p>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset">Reset</button>
+         </form>
+      </div>
+      <footer id="footer" style="position:absolute; bottom: 0;">
+         <p>&copy; 2023 Your Name. All rights reserved.</p>
+         <p>Designed and developed by Aditya.</p>
+      </footer>
+      <script src="app.js"></script>
+   </body>
+</html>
